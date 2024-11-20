@@ -1,5 +1,67 @@
+
+# 1. Inteiros (int)
+# Métodos e operações:
+# + (adição)
+# - (subtração)
+# * (multiplicação)
+# // (divisão inteira)
+# % (módulo - resto da divisão)
+
+# 2. Números de Ponto Flutuante (float)
+# Métodos e operações:
+# + (adição)
+# - (subtração)
+# * (multiplicação)
+# / (divisão)
+# ** (potenciação)
+
+# 3. Strings (str)
+# Métodos e operações:
+# .upper() (converte para maiúsculas)
+# .lower() (converte para minúsculas)
+# .strip() (remove espaços em branco no início e no final)
+# .split(sep) (divide a string em uma lista, utilizando sep como delimitador)
+# + (concatenação de strings)
+
+# 4. Booleanos (bool)
+# Operações lógicas:
+# and (E lógico)
+# or (OU lógico)
+# not (NÃO lógico)
+# == (igualdade)
+# != (diferença)
+
 # Inteiros (int)
 # Escreva um programa que soma dois números inteiros inseridos pelo usuário.
+
+try:
+    num1 = int(input("insira um número"))
+except NameError as e:
+    print('erro, vc não informou um número ou informou um valor inválido')
+    print(e)
+    exit()
+except TypeError as e:
+    print(e)
+    exit()
+except ValueError as e:
+    print(e)
+    exit()
+
+try:
+    num2 = int(input("insira outro número"))
+except NameError as e:
+    print('erro, vc não informou um número ou informou um valor inválido')
+    print(e)
+    exit()
+except TypeError as e:
+    print(e)
+    exit()
+except ValueError as e:
+    print(e)
+    exit()
+
+print(f"resultado é: {num1 + num2}")
+
 # Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
 # Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 # Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
