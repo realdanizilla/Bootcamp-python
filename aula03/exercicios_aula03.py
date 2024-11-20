@@ -72,13 +72,13 @@ while not nome_valido:
     # tratativa de erro
         if nome.isdigit():
             print("Você não digitou um nome, mas sim um número!")
-            exit()
+
         elif len(nome) == 0:
             print("Voce não escreveu nada")
-            exit()
+
         elif nome.isspace():
             print("Voce digitou um ou mais espaços, digite seu nome")
-            exit()
+
         else:
             nome_valido = True
             print("nome ", nome)
@@ -92,18 +92,18 @@ while not salario_valido:
         salario = float(input("Qual seu salário?"))
         if salario < 0:
             print("Salário não pode ser negativo")
-            exit()
+
         else:
             salario_valido = True
             print("salario: ", salario)
 
     except ValueError as e:
         print(e)
-        exit()
+
 
     except TypeError as e:
         print(e)
-        exit()
+
 
 # solicita que o usuário informe o multiplicador do bonus e converte para float
 
@@ -112,14 +112,14 @@ while not bonus_valido:
         bonus = float(input("Qual seu bônus?"))
         if bonus < 0:
             print("Bônus não pode ser negativo")
-            exit()
+
         else:
             bonus_valido = True
             print("O bonus é", bonus)
 
     except ValueError as e:
         print(e)
-        exit()
+
 
 # calcula o valor do bonus somando 1000 ao valor do bonus
 bonus_valor = salario * bonus + 1000
