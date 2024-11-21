@@ -161,3 +161,4 @@ for caractere in texto:
         frequencia[caractere] = 1
 
 print(frequencia)
+print()
