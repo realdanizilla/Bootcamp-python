@@ -162,3 +162,4 @@ for caractere in texto:
 
 print(frequencia)
 print()
+print()
