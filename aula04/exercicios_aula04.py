@@ -23,7 +23,8 @@ print(lista2)
 print()
 
 
-# Crie um dicionário para armazenar informações de um livro, incluindo título, autor e ano de publicação. Imprima cada informação.
+# Crie um dicionário para armazenar informações de um livro,
+# incluindo título, autor e ano de publicação. Imprima cada informação.
 dict1: dict = {
     "título": "Senhor dos Anéis",
     "autor": "J.R.R. Tolkien",
@@ -34,9 +35,11 @@ for k,v in dict1.items():
 print()
 
 
-# Escreva um programa que conta o número de ocorrências de cada caractere em uma string usando um dicionário.
+# Escreva um programa que conta o número de ocorrências de cada caractere
+# em uma string usando um dicionário.
 string: str = "Python é uma linguagem de programação"
 def contar_caracteres(string):
+    """ função para contar caracteres"""
     ocorrencias = {}
     for caractere in string:
         ocorrencias[caractere] = ocorrencias.get(caractere,0) +1
@@ -45,11 +48,13 @@ print(contar_caracteres(string))
 print()
 
 
-# Dada a lista ["maçã", "banana", "cereja"] 
-# e o dicionário {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}, calcule o preço total da lista de compras.
+# Dada a lista ["maçã", "banana", "cereja"]
+# # e o dicionário {"maçã": 0.45, "banana": 0.30, "cereja": 0.65},
+# calcule o preço total da lista de compras.
 lista_compras: list = ["maçã", "banana", "cereja"]
 precos: dict = {"maçã": 0.45, "banana": 0.30, "cereja":0.65}
 def calcular_preco(lista_compras, precos):
+    """ calcula o preco"""
     total = 0
     for item in lista_compras:
         total += precos[item]
@@ -98,7 +103,8 @@ print("Média:", media)
 print()
 
 
-#Objetivo: Dada uma lista de valores, dividir em duas listas: uma para valores pares e outra para ímpares.
+# Objetivo: Dada uma lista de valores, dividir em duas listas: 
+# uma para valores pares e outra para ímpares.
 
 valores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 pares = [valor for valor in valores if valor % 2 == 0]
@@ -124,7 +130,9 @@ print()
 
 estoque = {"Teclado": 10, "Mouse": 0, "Monitor": 3, "CPU": 0}
 
-estoque_positivo = {produto: quantidade for produto, quantidade in estoque.items() if quantidade > 0}
+estoque_positivo = {
+    produto: quantidade for produto, quantidade in estoque.items() if quantidade > 0
+}
 
 print(estoque_positivo)
 print()
