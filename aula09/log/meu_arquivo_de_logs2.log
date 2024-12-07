@@ -1,0 +1,30 @@
+2024-12-07T13:10:53.443390-0300 INFO Chamando função 'soma2' com args (2, 3) e kwargs {} exemplo_log2.py
+2024-12-07T13:10:53.443893-0300 INFO voce digitou os valores corretos, 2, 3, soma= 5 exemplo_log2.py
+2024-12-07T13:10:53.443893-0300 INFO Função 'soma2' retornou 5 exemplo_log2.py
+2024-12-07T13:10:53.444391-0300 INFO Chamando função 'soma2' com args (4, 5) e kwargs {} exemplo_log2.py
+2024-12-07T13:10:53.444391-0300 INFO voce digitou os valores corretos, 4, 5, soma= 9 exemplo_log2.py
+2024-12-07T13:10:53.444891-0300 INFO Função 'soma2' retornou 9 exemplo_log2.py
+2024-12-07T13:10:53.445890-0300 INFO Chamando função 'soma2' com args ('4', 5) e kwargs {} exemplo_log2.py
+2024-12-07T13:10:53.445890-0300 CRITICAL voce nao digitou valores corretos exemplo_log2.py
+2024-12-07T13:10:53.445890-0300 INFO Função 'soma2' retornou None exemplo_log2.py
+2024-12-07T13:10:53.446390-0300 INFO Chamando função 'soma2' com args (5, 3) e kwargs {} exemplo_log2.py
+2024-12-07T13:10:53.446390-0300 INFO voce digitou os valores corretos, 5, 3, soma= 8 exemplo_log2.py
+2024-12-07T13:10:53.446890-0300 INFO Função 'soma2' retornou 8 exemplo_log2.py
+2024-12-07T13:10:53.446890-0300 INFO Chamando função 'falha' com args () e kwargs {} exemplo_log2.py
+2024-12-07T13:10:53.446890-0300 ERROR Exceção capturada em 'falha': Um erro intencional exemplo_log2.py
+Traceback (most recent call last):
+
+  File "C:\Users\daniz\OneDrive\Documentos\Cursos\Jornada dos Dados\Bootcamp Python\aula09\exemplo_log2.py", line 55, in <module>
+    falha()
+    └ <function falha at 0x0000024B13BF22A0>
+
+> File "C:\Users\daniz\OneDrive\Documentos\Cursos\Jornada dos Dados\Bootcamp Python\aula09\exemplo_log2.py", line 28, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ ()
+             └ <function falha at 0x0000024B13BF20C0>
+
+  File "C:\Users\daniz\OneDrive\Documentos\Cursos\Jornada dos Dados\Bootcamp Python\aula09\exemplo_log2.py", line 51, in falha
+    raise ValueError("Um erro intencional")
+
+ValueError: Um erro intencional

@@ -1,0 +1,6 @@
+2024-12-07 13:10:45.736 | INFO     | __main__:soma:8 - 2
+2024-12-07 13:10:45.737 | INFO     | __main__:soma:9 - 3
+2024-12-07 13:10:45.737 | INFO     | __main__:soma:10 - 5
+2024-12-07 13:10:45.737 | INFO     | __main__:soma2:19 - voce digitou os valores corretos, 2, 3, soma= 5
+2024-12-07 13:10:45.738 | INFO     | __main__:soma2:19 - voce digitou os valores corretos, 4, 5, soma= 9
+2024-12-07 13:10:45.738 | CRITICAL | __main__:soma2:22 - voce nao digitou valores corretos
