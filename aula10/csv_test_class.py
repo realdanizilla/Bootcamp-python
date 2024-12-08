@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-# lendo csv e filtrando df somente com comandos
+
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(script_dir, "exemplo.csv")
@@ -9,6 +9,7 @@ print("Resolved file path:", file_path)
 print("Does the file exist?", os.path.exists(file_path))
 
 
+# lendo csv e filtrando df somente com comandos
 df = pd.read_csv(file_path)
 
 df_filtrado = df[df['estado'] == 'SP']
