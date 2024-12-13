@@ -22,7 +22,5 @@ def pegar_pokemon(id: int) -> PokemonSchema:
     types = ', '.join(types_list)
     return PokemonSchema(name=data['name'], type=types)
 
-from pydantic import BaseModel
-
 pokemon = pegar_pokemon(24)
 print(pokemon)
