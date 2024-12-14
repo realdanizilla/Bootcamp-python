@@ -12,7 +12,7 @@ services:
       - mynetwork
 
   backend:
-    build:  #zipe td q esta no backend
+    build: 
       context: ./backend
       dockerfile: Dockerfile
     volumes:
@@ -27,9 +27,18 @@ services:
       - mynetwork
 
   frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "8501:8501"
+    networks:
+      - mynetwork
 
-  networks:
-    mynetwork:
+networks:
+  mynetwork:
 
-volumes: # docker cv vai poder enxergar esse path e criar um arquivo aqui
-  postgres_data
+volumes:
+  postgres_data:
