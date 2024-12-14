@@ -30,7 +30,7 @@ def read_all_products(db: Session = Depends(get_db)):
 ### criar rota de buscar 1 item
 @router.get("/products/{product_id}", response_model=ProductResponse)
 def read_one_product(product_id: int, db: Session = Depends(get_db)):
-    db_product = get_product(db=db, product_id=product_id)
+    db_product = get_product(db, product_id=product_id)
     if db_product is None:
         raise HTTPException(status_code=404, detail="voce está buscando um produto que nao existe")
     return db_product
@@ -38,7 +38,7 @@ def read_one_product(product_id: int, db: Session = Depends(get_db)):
 ### criar rota de adicionar 1 item
 @router.post("/products/", response_model=ProductResponse)
 def create_product_route(product: ProductCreate, db: Session = Depends(get_db)):
-    return create_product(db=db, product=product)
+    return create_product(db, product=product)
 
 ### criar rota de deletar 1 item
 @router.delete("/products/{product_id}", response_model=ProductResponse)
